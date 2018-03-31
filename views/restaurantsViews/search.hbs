@@ -64,10 +64,16 @@
           <p>DELIVERY:</p>
           <a href="/search?qk=delivery&qv={{this.delivery}}">{{this.delivery}}</a>
         </div>
+        <div class="restItem">
+          <p>CITY:</p>
+          <a href="/search?qk=city&qv={{this.address.city}}">{{this.address.city}}</a>
+        </div>
 
       </div>
 
-      <a href="/{{this.id}}" class="resCardMore">MORE INFO</a>
+        <a href="/{{this.id}}" class="resCardMore">more info</a>
+
+        <a href="{{this.menuLink}}" target="_blank" class="menuButton">menu</a>
 
     </div>
 
@@ -77,8 +83,6 @@
     <div class="restCardRight">
 
       <img src="{{this.photo}}" alt="restaraunt img" height="200px" width="310px"/>
-
-      <a href="{{this.menuLink}}" target="_blank" class="menuButton">menu</a>
 
     </div>
 
