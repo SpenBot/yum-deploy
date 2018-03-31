@@ -22,13 +22,13 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
-const serverPort = 4000
+// set app Port to either the Environment port, or local 400
+app.set('port', process.env.PORT || 4000)
 
-// configure Express server port
-app.listen(serverPort, function () {
+// // configure Express server port
+app.listen(app.get('port'), () => {
   console.log(`\n\tServer listening on port ${serverPort}.\n`)
 })
-
 
 
 
