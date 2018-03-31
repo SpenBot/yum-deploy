@@ -34,7 +34,7 @@ db.on('error', err => {
 })
 
 db.once('open', () => {
-  console.log(`\n\tConnection to database successful: ${db}\n`)
+  console.log(`\n\tConnection to database successful: ${db.databaseName}\n`)
 })
 
 
