@@ -57,8 +57,10 @@ deploy version of yum project
    - $ heroku config:set MLAB_URL=mongodb://<your_user_login>:<your_user_password>@ds015760.mlab.com:15760/<your_db_name>
 
 - git commit to github master
+- also git push heroku master
 
-
+- seed database
+  - $ heroku run node db/seed.js
 
 
 
