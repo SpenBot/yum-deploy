@@ -11,8 +11,6 @@ deploy version of yum project
   > fix some styling,
 >> Update Portfolio
 
->> update Yum-deploy to stay in line with book-e?
-
 
 
 

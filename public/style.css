@@ -6,11 +6,9 @@ body {
 }
 
 header {
-  /* background-color: rgb(255, 221, 113); */
   background-color: rgb(255, 218, 81);
-  /* background-image: url("https://www.transparenttextures.com/patterns/always-grey.png"); */ */
   color: white;
-  height: 105px;
+  height: 115px;
 
   display: flex;
   flex-direction: row;
@@ -19,7 +17,7 @@ header {
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 76px;
-  margin: -25px 0 0 80px;
+  margin: -20px 0 0 80px;
 
   -moz-text-fill-color: black;
   -webkit-text-fill-color: black;
@@ -46,26 +44,29 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  /* background-color: rgb(58, 222, 186); */
   background-color: rgb(255, 173, 0);
-  height: 40px;
+  height: 50px;
 }
 
 nav a {
   font-size: 24px;
+  font-weight: bolder;
   color: white;
   text-align: center;
   width: 200px;
-  margin-left: 20px;
+  letter-spacing: 3px;
 }
 
 nav a:hover {
   background-color: white;
-  color: rgb(255, 173, 0);
+  color: rgb(255, 218, 81);
+  /* color: rgb(255, 173, 0); */
 }
 
 
 /* ///////// INDEX /////////////////////////////////////////////  */
-
 
 
 main {
@@ -132,20 +133,28 @@ main {
 }
 
 .resCardMore {
-  color: rgb(255, 173, 0);
-  font-weight: bolder;
+  background-color: rgb(58, 222, 186);
   margin-top: 30px;
-}
-
-.menuButton {
-  background-color: rgb(255, 173, 0);
-  font-size: 22px;
-  height: 50px;
-  padding-top: 15px;
+  padding: 10px;
   width: 200px;
   color: white;
   text-align: center;
   border-radius: 15px;
+  margin-top: 30px;
+
+}
+
+.menuButton {
+  background-color: rgb(255, 173, 0);
+  /* background-color: rgb(255, 218, 81); */
+  font-size: 22px;
+  /* height: 50px; */
+  padding: 10px;
+  width: 200px;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 5px;
 }
 
 
