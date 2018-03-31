@@ -1,0 +1,91 @@
+
+
+<h3>SEARCH</h3>
+
+<p>Browse Your Restaurants Here:</p>
+
+
+<select id="typeSelect">
+  <option value="">Select a category...</option>
+  {{#each typeArray}}
+    <option value="{{this}}">{{this}}</option>
+  {{/each}}
+</select>
+
+
+<select id="zipcodeSelect">
+  <option value="">Select a zipcode...</option>
+  {{#each zipcodeArray}}
+    <option value="{{this}}">{{this}}</option>
+  {{/each}}
+</select>
+
+
+<select id="citySelect">
+  <option value="">Select a city...</option>
+  {{#each cityArray}}
+    <option value="{{this}}">{{this}}</option>
+  {{/each}}
+</select>
+
+
+<select id="deliverySelect">
+  <option value="">Select by devilery...</option>
+  <option value="true">has devlivery</option>
+  <option value="false">does not deliver</option>
+</select>
+
+
+{{#if restaurants}}
+
+  <h5>SEARCH RESULTS FOR :<span class="searchTitleSpan">{{searchTitle}}</span></h5>
+
+  {{#each restaurants}}
+
+  <div class="restCard">
+
+
+
+    <div class="restCardLeft">
+
+      <a href="/{{this.id}}" class="resCardTitle">{{this.name}}</a>
+
+      <div>
+
+        <div class="restItem">
+          <p>TYPE:</p>
+          <a href="/search?qk=type&qv={{this.type}}">{{this.type}}</a>
+        </div>
+        <div class="restItem">
+          <p>PHONE:</p>
+          <p>{{this.phone}}</p>
+        </div>
+        <div class="restItem">
+          <p>DELIVERY:</p>
+          <a href="/search?qk=delivery&qv={{this.delivery}}">{{this.delivery}}</a>
+        </div>
+
+      </div>
+
+      <a href="/{{this.id}}" class="resCardMore">MORE INFO</a>
+
+    </div>
+
+
+
+
+    <div class="restCardRight">
+
+      <img src="{{this.photo}}" alt="restaraunt img" height="200px" width="310px"/>
+
+      <a href="{{this.menuLink}}" target="_blank" class="menuButton">menu</a>
+
+    </div>
+
+
+
+  </div>
+
+  {{/each}}
+
+{{/if}}

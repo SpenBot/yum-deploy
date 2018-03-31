@@ -1,0 +1,44 @@
+
+<h3>EDIT THIS RESTAURANT</h3>
+
+
+
+<form id="editForm" action="/{{this.id}}?_method=put" method="post">
+
+    <label>Name:</label>
+    <input type="text" value="{{this.name}}" name="restaurant[name]"/>
+
+    <label>Photo:</label>
+    <input type="text" value="{{this.photo}}" name="restaurant[photo]"/>
+
+    <label>Type:</label>
+    <input type="text" value="{{this.type}}" name="restaurant[type]"/>
+
+    <label>Phone:</label>
+    <input type="text" value="{{this.phone}}" name="restaurant[phone]"/>
+
+    <label>Street:</label>
+    <input type="text" value="{{this.address.street}}" name="restaurant[address.street]"/>
+    <label>City:</label>
+    <input type="text" value="{{this.address.city}}" name="restaurant[address.city]"/>
+    <label>State:</label>
+    <input type="text" value="{{this.address.state}}" name="restaurant[address.state]"/>
+    <label>Zipcode:</label>
+    <input type="text" value="{{this.address.zipcode}}" name="restaurant[address.zipcode]"/>
+
+    <label>Menu Link:</label>
+    <input type="text" value="{{this.menuLink}}" name="restaurant[menuLink]"/>
+
+    <label>Delivery:</label>
+    <input type="text" value="{{this.delivery}}" name="restaurant[delivery]"/>
+
+  <input type="submit" value="Update" />
+
+
+</form>
+
+
+
+<form id="removeForm" action="/{{this.id}}?_method=delete" method="post">
+  <input type="submit" value="Remove">
+</form>

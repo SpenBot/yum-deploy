@@ -1,0 +1,52 @@
+
+<h3>ALL RESTAURANTS</h3>
+
+
+
+  {{#each restaurants}}
+
+  <div class="restCard">
+
+
+
+    <div class="restCardLeft">
+
+      <a href="/{{this.id}}" class="resCardTitle">{{this.name}}</a>
+
+      <div>
+
+        <div class="restItem">
+          <p>TYPE:</p>
+          <a href="/search?qk=type&qv={{this.type}}">{{this.type}}</a>
+        </div>
+        <div class="restItem">
+          <p>PHONE:</p>
+          <p>{{this.phone}}</p>
+        </div>
+        <div class="restItem">
+          <p>DELIVERY:</p>
+          <a href="/search?qk=delivery&qv={{this.delivery}}">{{this.delivery}}</a>
+        </div>
+
+      </div>
+
+      <a href="/{{this.id}}" class="resCardMore">MORE INFO</a>
+
+    </div>
+
+
+
+
+    <div class="restCardRight">
+
+      <img src="{{this.photo}}" alt="restaraunt img" height="200px" width="310px"/>
+
+      <a href="{{this.menuLink}}" target="_blank" class="menuButton">menu</a>
+
+    </div>
+
+
+
+  </div>
+
+  {{/each}}

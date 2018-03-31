@@ -1,0 +1,37 @@
+
+<h3>SHOW PAGE</h3>
+
+
+<h4>{{this.name}}</h4>
+
+  <div class="showDiv">
+
+    <div class="showCardLeft">
+      <p>TYPE:</p>
+      <a href="/search?qk=type&qv={{this.type}}">{{this.type}}</a>
+
+      <p>PHONE:</p>
+      <p>{{this.phone}}</p>
+
+      <p>STREET:</p>
+      <p>{{this.address.street}}</p>
+
+      <p>CITY:</p>
+      <a href="/search?qk=city&qv={{this.address.city}}">{{this.address.city}}</a>
+
+      <p>ZIPCODE:</p>
+      <a href="/search?qk=zipcode&qv={{this.address.zipcode}}">{{this.address.zipcode}}</a>
+
+      <p>DELIVERY:</p>
+      <a href="/search?qk=delivery&qv={{this.delivery}}">{{this.delivery}}</a>
+
+      <a href="edit/{{this.id}}" id="editButton">edit</a>
+    </div>
+
+    <div class="showCardRight">
+      <img src="{{this.photo}}" alt="restaraunt img" height="200px" width="310px"/>
+      <a href="{{this.menuLink}}" target="_blank" class="menuButton">menu</a>
+    </div>
+
+
+  </div>

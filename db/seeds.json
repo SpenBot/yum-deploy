@@ -1,0 +1,60 @@
+
+[
+
+  {
+    "name": "M&N Pizza",
+    "type": "pizza",
+    "phone": "(301) 656-6262",
+    "address": {
+      "street": "7750 Old Georgetown Road",
+      "city": "Bethesda",
+      "state": "MD",
+      "zipcode": "20814"
+    },
+    "menuLink": "https://slicelife.com/restaurants/md/bethesda/20814/m-n-s-pizza/menu?slice_amp_id=7b7556803acdb502510547b3c598637d&segment_id=1a0727d1-213a-409e-904b-c05deb0397e8&amp_id=",
+    "delivery": true
+  },
+
+  {
+    "name": "Fish Taco",
+    "type": "tacos",
+    "phone": "(301) 652-0010",
+    "address": {
+      "street": "7015 Wisconsin Av",
+      "city": "Chevy Chase",
+      "state": "MD",
+      "zipcode": "20815"
+    },
+    "menuLink": "https://fishtacoonline.com/menu/",
+    "delivery": false
+  },
+
+  {
+    "name": "Chinese Express",
+    "type": "chinese",
+    "phone": "(301) 652-0010",
+    "address": {
+      "street": "7613 Wisconsin Ave",
+      "city": "Bethesda",
+      "state": "MD",
+      "zipcode": "20814"
+    },
+    "menuLink": "http://www.chinaexpressmd.com/",
+    "delivery": true
+  },
+
+  {
+    "name": "&pizza",
+    "type": "pizza",
+    "phone": "(240) 800-4783",
+    "address": {
+      "street": "7614 Old Georgetown Rd",
+      "city": "Bethesda",
+      "state": "MD",
+      "zipcode": "20814"
+    },
+    "menuLink": "https://andpizza.com/",
+    "delivery": false
+  }
+
+]
