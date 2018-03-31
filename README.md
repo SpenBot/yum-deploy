@@ -8,6 +8,16 @@ deploy version of yum project
   - should be more up-to-date and removed deprecated code on back-end.
 
 
+  > fix some styling,
+>> Update Portfolio
+
+>> update Yum-deploy to stay in line with book-e?
+
+
+
+
+
+
 ## FEATURES TO ADD
 
 - Sort search results and index (by name-alpha, type-alpha, city-alpha,)
