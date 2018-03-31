@@ -27,7 +27,7 @@ app.set('port', process.env.PORT || 4000)
 
 // // configure Express server port
 app.listen(app.get('port'), () => {
-  console.log(`\n\tServer listening on port ${serverPort}.\n`)
+  console.log(`\n\tServer listening on port : ${app.get('port')}.\n`)
 })
 
 

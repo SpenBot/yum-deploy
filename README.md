@@ -62,6 +62,7 @@ deploy version of yum project
 - seed database
   - $ heroku run node db/seed.js
 
+- $ heroku open
 
 
 >> END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
